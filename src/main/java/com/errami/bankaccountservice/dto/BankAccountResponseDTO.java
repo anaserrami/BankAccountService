@@ -1,5 +1,6 @@
 package com.errami.bankaccountservice.dto;
 
+import com.errami.bankaccountservice.entities.Customer;
 import com.errami.bankaccountservice.enums.AccountType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,4 +16,5 @@ public class BankAccountResponseDTO {
     private Double balance;
     private String currency;
     private AccountType type;
+    private Customer customer;
 }
