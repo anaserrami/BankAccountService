@@ -1,14 +1,12 @@
 package com.errami.bankaccountservice.entities;
 
 import com.errami.bankaccountservice.enums.AccountType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
 
 import java.util.Date;
 
@@ -16,6 +14,11 @@ import java.util.Date;
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
 public class BankAccount {
     @Id
+    @GeneratedValue(generator = "UUID")
+    @GenericGenerator(
+            name = "UUID",
+            strategy = "org.hibernate.id.UUIDGenerator"
+    )
     private String id;
     private Date createdAt;
     private Double balance;
