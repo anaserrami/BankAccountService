@@ -142,28 +142,28 @@ public class AccountRestController {
 }
 ```
 5. Tester le web micro-service en utilisant un client REST comme Postman :
-- Récuperer tous les comptes :
+- **Récuperer tous les comptes :**
 
 ![img_2.png](assets/img_2.png)
-- Récuperer un compte par son id :
+- **Récuperer un compte par son id :**
 
 ![img_3.png](assets/img_3.png)
-- Ajouter un compte :
+- **Ajouter un compte :**
 
 ![img_4.png](assets/img_4.png)
-- Modifier un compte :
+- **Modifier un compte :**
 
 ![img_5.png](assets/img_5.png)
-- Supprimer un compte :
+- **Supprimer un compte :**
 
 ![img_6.png](assets/img_6.png)
 
 6. Générer et tester le documentation Swagger de des API Rest du Web service :
-- Générer le documentation Swagger de des API Rest du Web service :
+- **Générer le documentation Swagger de des API Rest du Web service :**
 
 ![img_7.png](assets/img_7.png)
 ![img_8.png](assets/img_8.png)
-- Tester le documentation Swagger dans Postman :
+- **Tester le documentation Swagger dans Postman :**
 
 ![img_9.png](assets/img_9.png)
 ![img_10.png](assets/img_10.png)
@@ -171,7 +171,7 @@ public class AccountRestController {
 ![img_12.png](assets/img_12.png)
 
 8. Créer les DTOs et Mappers :
-DTOs :
+- **DTOs :**
 ```java
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
 public class BankAccountRequestDTO {
@@ -191,7 +191,7 @@ public class BankAccountResponseDTO {
     private Customer customer;
 }
 ```
-Mappers :
+- **Mappers :**
 ```java
 @Component
 public class AccountMapper {
